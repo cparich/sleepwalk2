@@ -24,3 +24,22 @@ ToDo:
 
 * Detect Wifi Hotspot
 * Detect Audio Playing
+
+To build:
+
+```
+$ qmake -config debug
+$ make
+```
+
+To build your very own debian package:
+
+```
+$ debuild -us -uc
+```
+
+will generate a debian package in ../sleepwalk2_x.x.x_arm64.deb. You can install with just
+
+```
+sudo apt install ../sleepwalk2_x.x.x_arm64.deb
+```

@@ -1,0 +1,16 @@
+Source: sleepwalk2
+Section: utils
+Priority: optional
+Maintainer: Chris Parich <chris@parich.us>
+Build-Depends: debhelper-compat (= 13), libfmt-dev, qtbase5-dev
+Standards-Version: 4.6.0
+Homepage: https://github.com/cparich/sleepwalk2
+Vcs-Browser: https://github.com/cparich/sleepwalk2
+Vcs-Git: https://github.com/cparich/sleepwalk2.git
+
+Package: sleepwalk2
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Sleepwalk implementation for Pinephone and Pinephone Pro
+ A sleepwalk implementation for Pinephone and Pinephone Pro
+ Uses DBus to communicate with systemd, inhibitors, and notifications APIs

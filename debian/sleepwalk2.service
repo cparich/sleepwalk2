@@ -1,12 +1,12 @@
 [Unit]
 Description=Deep-Sleep-Service for PinePhone with support for periodic wake-ups to get notifications
+After=user@1000.service
 
 [Service]
+Type=simple
 User=root
-WorkingDirectory=/
-ExecStart=sleepwalk start
-ExecStop=sleepwalk stop
+Exec=sleepwalk2
 Restart=always
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=user@1000.service

@@ -46,6 +46,7 @@ auto constexpr DEFAULT_WAKE_TIME  = 60000;
 auto constexpr SLEEP_TIME         = "sleep_time";
 auto constexpr WAKE_TIME          = "wake_time";
 auto constexpr DEVICE_CLASS_FILE  = "/sys/firmware/devicetree/base/compatible";
+auto constexpr CONFIG_FILE        = "/etc/default/sleepwalk2";
 
 enum stateType_t
 {
@@ -104,7 +105,7 @@ std::array<char const *, application_t::COUNT> const &pickDevice ()
 
 QSettings &prepareSettings ()
 {
-	static QSettings s ("/etc/default/sleepwalk", QSettings::IniFormat);
+	static QSettings s (CONFIG_FILE, QSettings::IniFormat);
 
 	auto const keys = s.allKeys ();
 

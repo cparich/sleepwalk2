@@ -35,5 +35,10 @@ sleepwalk2
 # Generated files
 moc_*.cpp
 moc_predefs.h
+*.pro.user
 .qmake.stash
 Makefile
+debian/debhelper-build-stamp
+debian/files
+debian/sleepwalk2.postrm.debhelper
+debian/sleepwalk2.substvars

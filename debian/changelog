@@ -1,5 +1,6 @@
-sleepwalk2 (0.1.0) UNRELEASED; urgency=medium
+sleepwalk2 (0.1.0) stable; urgency=medium
 
   * Initial release
+  * fix service file
 
- -- Chris Parich <chris@parich.us>  Thu, 29 Dec 2022 14:43:31 -0600
+ -- Chris Parich <chris@parich.us>  Thu, 29 Dec 2022 16:10:40 -0600

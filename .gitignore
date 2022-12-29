@@ -30,3 +30,10 @@
 *.exe
 *.out
 *.app
+sleepwalk2
+
+# Generated files
+moc_*.cpp
+moc_predefs.h
+.qmake.stash
+Makefile
